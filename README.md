@@ -13,10 +13,10 @@ This notebook walks through the full end-to-end process — from raw data to act
 
    * Layer 2 — Statistical Clustering (K-Prototype). Let the data define natural customer groups. Used elbow method and silhouette score to select K=5. The clusters revealed behavioral segments that manual rules could not        capture.
 
-* Feature Validation — Mutual Information & XGBoost. Identified which features actually predict churn. Confirmed 4 key drivers that all three predictive models agree on: tenure, contract type, support/security add-ons, and service zone.
+    * Feature Validation — Mutual Information & XGBoost. Identified which features actually predict churn. Confirmed 4 key drivers that all three predictive models agree on: tenure, contract type, support/security add-ons,         and service zone.
 
-Layer 3 — Predictive Scoring. Built and compared Logistic Regression, Random Forest, and XGBoost. Selected Random Forest as the best model (AUC 0.832). Scored every active customer by churn probability, ranked them by revenue at risk, and produced a ready-to-use retention priority list.
+    * Layer 3 — Predictive Scoring. Built and compared Logistic Regression, Random Forest, and XGBoost. Selected Random Forest as the best model (AUC 0.832). Scored every active customer by churn probability, ranked them by      revenue at risk, and produced a ready-to-use retention priority list.
 
-Step 3 — Stakeholder Deliverable. Translated all findings into a presentation deck that tells the full story for business stakeholders — from customer segments and churn drivers to the retention priority list. The goal was not just to build models, but to make the insights actionable for stakeholders who need the business takeaway, not the technical details
+* Step 3 — Stakeholder Deliverable. Translated all findings into a presentation deck that tells the full story for business stakeholders — from customer segments and churn drivers to the retention priority list. The goal was not just to build models, but to make the insights actionable for stakeholders who need the business takeaway, not the technical details
 
 If you are here to see how customer segmentation and churn prediction work in practice from cleaning data to delivering a prioritized action list, this notebook walks through every decision, trade-off, and business interpretation along the way.
